@@ -29,7 +29,6 @@ int main() {
     float Densidade1, Densidade2;
     float PIB_Per1, PIB_Per2;
     float SuperPoder1, SuperPoder2;
-    bool resultado1, resultado2;
 
     // Recebendo os Dados das Cartas
     printf("\nDigite as Informações para a Primeira Carta!\n");
@@ -98,16 +97,14 @@ int main() {
     printf("PIB Per Capita: %.4f\n", PIB_Per2);
 
     //Comparando Atributos
-    printf("Comparação das Cartas\nCarta 1 (1)\nCarta 2 (0)");
-    printf("População: %d Venceu!", Pop1 > Pop2);
-    printf("Área: %d Venceu!", Area1 > Area2);
-    printf("PIB: %d Venceu!", PIB1 > PIB2);
-    printf("Pontos Turísticos: %d Venceu!", Pontos1 > Pontos2);
-    printf("Densidade: %d Venceu!", Densidade11 < Densidade2);
-    printf("PIB Per Capita: %d Venceu!", PIB_Per1 > PIB_Per2);
-    printf("Super Poder: %d Venceu!", SuperPoder1 > SuperPoder2);
-
-    printf("Super Poder: %.2f %.2f", SuperPoder1, SuperPoder2);
+    printf("\nComparação das Cartas\nCarta 1 (1)\nCarta 2 (0)\n");
+    printf("População: %d Venceu!\n", Pop1 > Pop2);
+    printf("Área: %d Venceu!\n", Area1 > Area2);
+    printf("PIB: %d Venceu!\n", PIB1 > PIB2);
+    printf("Pontos Turísticos: %d Venceu!\n", Pontos1 > Pontos2);
+    printf("Densidade: %d Venceu!\n", Densidade1 < Densidade2);
+    printf("PIB Per Capita: %d Venceu!\n", PIB_Per1 > PIB_Per2);
+    printf("Super Poder: %d Venceu!\n", SuperPoder1 > SuperPoder2);
 
     return 0;
 }
