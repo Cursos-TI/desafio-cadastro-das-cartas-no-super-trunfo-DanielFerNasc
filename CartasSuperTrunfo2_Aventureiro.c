@@ -22,12 +22,14 @@ int main() {
     char Estado1[20], Estado2[20];
     char Codigo1[10], Codigo2[10];
     char Cidade1[20], Cidade2[20];
-    int Pop1, Pop2;
+    unsigned long int Pop1, Pop2;
     int Pontos1, Pontos2;
     float Area1, Area2;
     float PIB1, PIB2;
     float Densidade1, Densidade2;
     float PIB_Per1, PIB_Per2;
+    float SuperPoder1, SuperPoder2;
+    bool resultado1, resultado2;
 
     // Recebendo os Dados das Cartas
     printf("\nDigite as Informações para a Primeira Carta!\n");
@@ -67,6 +69,14 @@ int main() {
     Densidade2 = Pop2 / Area2;
     PIB_Per1 = PIB1 / Pop1;
     PIB_Per2 = PIB2 / Pop2;
+
+    //Super Poder
+    SuperPoder1 = ((float)Pop1 + Area1 + PIB1 + (float)Pontos1 + PIB_Per1 + (1/Densidade1));
+    SuperPoder2 = ((float)Pop2 + Area2 + PIB2 + (float)Pontos2 + PIB_Per2 + (1/Densidade2));
+
+    //Comparando Atributos
+    resultado1 = Pop1 > Pop2;
+    resultado2 = Pop2 > Pop1;
 
     //  Apresentando os Dados das Cartas
     printf("\nCarta 1:\n");
