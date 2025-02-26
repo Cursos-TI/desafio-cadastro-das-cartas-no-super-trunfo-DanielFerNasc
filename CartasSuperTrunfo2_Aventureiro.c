@@ -74,10 +74,6 @@ int main() {
     SuperPoder1 = ((float)Pop1 + Area1 + PIB1 + (float)Pontos1 + PIB_Per1 + (1/Densidade1));
     SuperPoder2 = ((float)Pop2 + Area2 + PIB2 + (float)Pontos2 + PIB_Per2 + (1/Densidade2));
 
-    //Comparando Atributos
-    resultado1 = Pop1 > Pop2;
-    resultado2 = Pop2 > Pop1;
-
     //  Apresentando os Dados das Cartas
     printf("\nCarta 1:\n");
     printf("Estado: %s\n", Estado1);
@@ -100,6 +96,18 @@ int main() {
     printf("Pontos Turísticos: %d\n", Pontos2);
     printf("Densidade Populacional: %.4f\n", Densidade2);
     printf("PIB Per Capita: %.4f\n", PIB_Per2);
+
+    //Comparando Atributos
+    printf("Comparação das Cartas\nCarta 1 (1)\nCarta 2 (0)");
+    printf("População: %d Venceu!", Pop1 > Pop2);
+    printf("Área: %d Venceu!", Area1 > Area2);
+    printf("PIB: %d Venceu!", PIB1 > PIB2);
+    printf("Pontos Turísticos: %d Venceu!", Pontos1 > Pontos2);
+    printf("Densidade: %d Venceu!", Densidade11 < Densidade2);
+    printf("PIB Per Capita: %d Venceu!", PIB_Per1 > PIB_Per2);
+    printf("Super Poder: %d Venceu!", SuperPoder1 > SuperPoder2);
+
+    printf("Super Poder: %.2f %.2f", SuperPoder1, SuperPoder2);
 
     return 0;
 }
